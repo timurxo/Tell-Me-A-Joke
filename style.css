@@ -1,0 +1,70 @@
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* background-color: #45badd; */
+  background-color: #fcf4d4;
+}
+
+.container {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('./giphy.gif');
+  /* make image fully visible on the screen */
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  color: #d6e0f0;
+  background: #848ccf;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  filter: brightness(95%);
+}
+
+/* make button smalelr */
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+
+/* for mobile devices */
+@media screen and (max-width: 1000px) {
+  .container {
+    background-size: cover;
+    background-position: center center;
+  }
+
+  button {
+    box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
+  }
+
+}
+
+
+
+
+
