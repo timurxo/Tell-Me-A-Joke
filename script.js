@@ -1,7 +1,7 @@
 const button = document.getElementById('button');
 const audioElement = document.getElementById('audio');
 var my_key = config.myKey;
-// var jokes_url = config2.jokesUrl;
+var jokes_url = config2.jokesUrl;
 
 // Disable/Enable Button
 function toggleButton() {
@@ -26,7 +26,7 @@ function tellMe(joke) {
 // Get jokes from Joke API
 async function getJokes() {
   let joke = '';
-    const apiUrl = 'https://sv443.net/jokeapi/v2/joke/Programming?blacklistFlags=racist,sexist';
+    const apiUrl = jokes_url;
   try {
     // return json object
     const response = await fetch(apiUrl);
