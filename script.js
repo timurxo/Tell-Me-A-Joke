@@ -1,6 +1,6 @@
 const button = document.getElementById('button');
 const audioElement = document.getElementById('audio');
-var my_key = config.myKey;
+var my_key = config1.myKey;
 var jokes_url = config2.jokesUrl;
 
 // Disable/Enable Button
